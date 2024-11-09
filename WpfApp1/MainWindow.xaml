@@ -7,7 +7,22 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button Content="далее" HorizontalAlignment="Left" VerticalAlignment="Top" Width="136" Margin="321,169,0,0" Height="67" Click="Button_Click"/>
+        <Menu Height="25" VerticalAlignment="Top">
+            <MenuItem Header="файл" Height="25">
+                <MenuItem.Icon>
+                    <Image Source="C:\envelope.png"></Image>
+                </MenuItem.Icon>
+                <MenuItem Header="открыть">
+                    <MenuItem Header="файл 1" Click="MenuItem_Click_1"></MenuItem>
+                    <MenuItem Header="файл 2" Click="MenuItem_Click_2"></MenuItem>
+                </MenuItem>
+                <MenuItem Header="сохранить"></MenuItem>
+                <Separator/>
+                <MenuItem Header="выйти" Click="MenuItem_Click"></MenuItem>
+            </MenuItem>
+        </Menu>
+        <Button Content="далее" HorizontalAlignment="Left" VerticalAlignment="Top" Width="121" Margin="566,364,0,0" Height="28" Click="Button_Click"/>
+        <Image Name="DisplayImage" HorizontalAlignment="Left" Height="257" Margin="146,70,0,0" VerticalAlignment="Top" Width="416"/>
 
     </Grid>
 </Window>
