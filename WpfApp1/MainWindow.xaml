@@ -9,12 +9,8 @@
     <Grid>
         <Menu Height="25" VerticalAlignment="Top">
             <MenuItem Header="файл" Height="25">
-                <MenuItem.Icon>
-                    <Image Source="C:\envelope.png"></Image>
-                </MenuItem.Icon>
-                <MenuItem Header="открыть">
-                    <MenuItem Header="файл 1" Click="MenuItem_Click_1"></MenuItem>
-                    <MenuItem Header="файл 2" Click="MenuItem_Click_2"></MenuItem>
+                <MenuItem Header="открыть" Click="MenuItem_Click_1">
+
                 </MenuItem>
                 <MenuItem Header="сохранить"></MenuItem>
                 <Separator/>
@@ -22,7 +18,10 @@
             </MenuItem>
         </Menu>
         <Button Content="далее" HorizontalAlignment="Left" VerticalAlignment="Top" Width="121" Margin="566,364,0,0" Height="28" Click="Button_Click"/>
-        <Image Name="DisplayImage" HorizontalAlignment="Left" Height="257" Margin="146,70,0,0" VerticalAlignment="Top" Width="416"/>
-
+        <Image Name="DisplayImage" HorizontalAlignment="Left" Height="87" Margin="540,44,0,0" VerticalAlignment="Top" Width="229"/>
+        <Button Content="Button" Margin="104,367,296,33" Click="Button_Click_1"></Button>
+        <TextBlock Name="ononim" FontSize="26" FontStyle="Oblique" HorizontalAlignment="Left" Margin="40,181,0,158" RenderTransformOrigin="0.5,0.5" Width="209"><Run Text=" "/></TextBlock>
+        <PasswordBox HorizontalAlignment="Left" Width="215" Margin="70,72,0,315"/>
+        <TextBox HorizontalAlignment="Left" Width="234" Margin="290,87,0,195"/>
     </Grid>
 </Window>

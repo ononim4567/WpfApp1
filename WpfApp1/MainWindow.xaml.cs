@@ -1,4 +1,5 @@
 ﻿using System;
+using Microsoft.Win32;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,8 +21,6 @@ namespace WpfApp1
     /// </summary>
     public partial class MainWindow : Window
     {
-        private string imgsorcel1 = @"C:\img2.akspic.ru-bak-masiny-world_of_tanks-boevaya_mashina-vid_transporta-2560x1600.jpg";
-        private string imgsorcel2 = @"C:\img1.akspic.ru-voennosluzhashhie-polet-aviaciya-vozdushnye_sily-aerokosmicheskaya_tehnika-3543x2362.jpg";
         public MainWindow()
         {
             InitializeComponent();
@@ -42,12 +41,17 @@ namespace WpfApp1
 
         private void MenuItem_Click_1(object sender, RoutedEventArgs e)
         {
-            DisplayImage.Source = new BitmapImage(new Uri(imgsorcel1));
+            OpenFileDialog openFileDialog = new OpenFileDialog { Filter = "Image Files| *.jpg;*.jpeg;*.png;*.gif;*.bmp;" };
+            if(openFileDialog.ShowDialog() == true)
+            {
+                BitmapImage bitmapImage = new BitmapImage(new Uri(openFileDialog.FileName));
+                DisplayImage.Source = bitmapImage;
+            }
         }
 
-        private void MenuItem_Click_2(object sender, RoutedEventArgs e)
+        private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            DisplayImage.Source = new BitmapImage(new Uri(imgsorcel2));
+            ononim.Text = "ononim";
         }
     }
 }
