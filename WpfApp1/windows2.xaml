@@ -27,23 +27,23 @@
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <Button Name="btn7" Content="7" Grid.Row="1" Grid.Column="0" FontSize="24" Background="White"/>
-                <Button Name="btn4" Content="4" Grid.Row="2" Grid.Column="0" FontSize="24" Background="Blue"/>
-                <Button Name="btn8" Content="8" Grid.Row="1" Grid.Column="1" FontSize="24" Background="White"/>
-                <Button Name="btn9" Content="9" Grid.Row="1" Grid.Column="2" FontSize="24" Background="White"/>
-                <Button Name="btn5" Content="5" Grid.Row="2" Grid.Column="1" FontSize="24" Background="Blue"/>
-                <Button Name="btn6" Content="6" Grid.Row="2" Grid.Column="2" FontSize="24" Background="Blue"/>
-                <Button Name="btn1" Content="1" Grid.Row="3" Grid.Column="0" FontSize="24" Background="Red"/>
-                <Button Name="btn2" Content="2" Grid.Row="3" Grid.Column="1" FontSize="24" Background="Red"/>
-                <Button Name="btn3" Content="3" Grid.Row="3" Grid.Column="2" FontSize="24" Background="Red"/>
-                <Button Name="btn0" Content="0" Grid.Row="4" Grid.ColumnSpan="2" Grid.Column="1" FontSize="24"/>
-                <Button Name="btnDel" Content="/" Grid.Row="0" Grid.Column="1" FontSize="24"/>
-                <Button Name="btnMul" Content="*" Grid.Row="0" Grid.Column="2" FontSize="24"/>
-                <Button Name="btnMin" Content="-" Grid.Row="0" Grid.Column="3" FontSize="24"/>
-                <Button Name="btnPlus" Content="+" Grid.Row="1" Grid.RowSpan="2" Grid.Column="3" FontSize="24"/>
-                <Button Name="btnResult" Content="=" Grid.Row="3" Grid.RowSpan="4" Grid.Column="3" FontSize="24"/>
-                <Button Name="btnClear" Content="c" Grid.Row="0" Grid.Column="0" FontSize="24"/>
-                <Button Name="btnDec" Content="." Grid.Row="4" Grid.Column="0" FontSize="24"/>
+                <Button Name="btn7" Content="7" Grid.Row="1" Grid.Column="0" FontSize="24" Background="White" Click="NumberButton_Click"/>
+                <Button Name="btn4" Content="4" Grid.Row="2" Grid.Column="0" FontSize="24" Background="Blue" Click="NumberButton_Click"/>
+                <Button Name="btn8" Content="8" Grid.Row="1" Grid.Column="1" FontSize="24" Background="White" Click="NumberButton_Click"/>
+                <Button Name="btn9" Content="9" Grid.Row="1" Grid.Column="2" FontSize="24" Background="White" Click="NumberButton_Click"/>
+                <Button Name="btn5" Content="5" Grid.Row="2" Grid.Column="1" FontSize="24" Background="Blue" Click="NumberButton_Click"/>
+                <Button Name="btn6" Content="6" Grid.Row="2" Grid.Column="2" FontSize="24" Background="Blue" Click="NumberButton_Click"/>
+                <Button Name="btn1" Content="1" Grid.Row="3" Grid.Column="0" FontSize="24" Background="Red" Click="NumberButton_Click"/>
+                <Button Name="btn2" Content="2" Grid.Row="3" Grid.Column="1" FontSize="24" Background="Red" Click="NumberButton_Click"/>
+                <Button Name="btn3" Content="3" Grid.Row="3" Grid.Column="2" FontSize="24" Background="Red" Click="NumberButton_Click"/>
+                <Button Name="btn0" Content="0" Grid.Row="4" Grid.ColumnSpan="2" Grid.Column="1" FontSize="24" Click="NumberButton_Click"/>
+                <Button Name="btnDel" Content="/" Grid.Row="0" Grid.Column="1" FontSize="24" Click="OperationButton_Click"/>
+                <Button Name="btnMul" Content="*" Grid.Row="0" Grid.Column="2" FontSize="24" Click="OperationButton_Click"/>
+                <Button Name="btnMin" Content="-" Grid.Row="0" Grid.Column="3" FontSize="24" Click="OperationButton_Click"/>
+                <Button Name="btnPlus" Content="+" Grid.Row="1" Grid.RowSpan="2" Grid.Column="3" FontSize="24" Click="OperationButton_Click"/>
+                <Button Name="btnResult" Content="=" Grid.Row="3" Grid.RowSpan="4" Grid.Column="3" FontSize="24" Click="EqualsButton_Click"/>
+                <Button Name="btnClear" Content="c" Grid.Row="0" Grid.Column="0" FontSize="24" Click="ClearButton_Click"/>
+                <Button Name="btnDec" Content="." Grid.Row="4" Grid.Column="0" FontSize="24" Click="NumberButton_Click"/>
             </Grid>
 
         </Grid>
